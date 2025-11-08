@@ -1,8 +1,12 @@
-numbers = [5, 2, 1, 7, 4, 5, 2]
-uniques = []
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-        uniques.sort()
-print(uniques)
+phone = input("phone: ")
+digit_mapping = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four",
+}
 
+output = ""
+for ch in phone:
+    output+=digit_mapping.get(ch, "!")  +  ""
+print(output)
