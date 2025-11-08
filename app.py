@@ -1,6 +1,8 @@
-numbers = [2, 2,  2, 7]
-for x_count in numbers:
-    output = ""
-    for count in range(x_count):
-        output += 'x'
-    print(output)
+numbers = [5, 2, 1, 7, 4, 5, 2]
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+        uniques.sort()
+print(uniques)
+
